@@ -1,12 +1,13 @@
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center mt-20 w-full h-full bg-gradient-to-b from-white via-slate-200 to-indigo-300">
-      <h1 className="lg:text-8xl text-4xl font-bold bg-gradient-to-r subpixel-antialiased from-orange-200 via-orange-300 to-orange-400 bg-clip-text text-transparent md:text-5xl sm:text-7xl">
+    <div className="flex flex-col items-center justify-center mt-20 w-full h-full bg-gradient-to-b from-white via-slate-200 to-indigo-300 ">
+      <h1 className="lg:text-8xl text-4xl leading-loose font-bold bg-gradient-to-r subpixel-antialiased from-orange-200 via-orange-300 to-orange-400 bg-clip-text text-transparent md:text-5xl sm:text-7xl">
         Asparsha Yoga
       </h1>
       <h4 className="lg:font-normal  text-indigo-300 text-2xl md:text-lg sm:text-md mt-4 lg:mt-6">
@@ -35,7 +36,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-8 md:mt-16 lg:mt-28 max-w-xl max-h-full flex flex-col gap-1 items-center opacity-1 rounded-lg p-2">
+      <div className="mt-8 md:mt-16 lg:mt-28 max-w-xl max-h-full flex flex-col gap-1 items-center opacity-15 rounded-lg p-2 hover: opacity-100 backdrop-blur-sm">
         <h1 className="text-3xl md:text-4xl lg:text-5xl mb-3 font-medium text-white underline">
           Origins Of Self
         </h1>
@@ -61,8 +62,9 @@ export default function Home() {
               attained by all Yogis (in general). The Yogis are afraid of it,
               for they see fear in it where there is really fearlessness....
             </h1>
+
             <button className="text-medium p-2 mt-5 mr-3 bg-indigo-200 w-38 h-auto  rounded-md hover: translate-x-1 ">
-              Know More
+              <Link href="details">Know More</Link>
             </button>
           </div>
         </div>
